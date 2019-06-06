@@ -13,7 +13,6 @@ declare(strict_types=1);
 
 namespace Ajgl\SwiftmailerMailer\Bundle\DependencyInjection;
 
-use RuntimeException;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -39,9 +38,6 @@ class AjglSwiftmailerMailerExtension extends Extension implements CompilerPassIn
     public function process(ContainerBuilder $container): void
     {
         if ($this->overrideDefaultTransport) {
-            if (!$container->hasDefinition('mailer.mailer')) {
-                throw new RuntimeException('See https://github.com/symfony/symfony/pull/31854');
-            }
             $mailerDefinition = $container->getDefinition('mailer.mailer');
             $mailerDefinition->setArgument(0, new Reference('ajgl_swiftmailer_mailer.mailer.transport.swiftmailer'));
         }

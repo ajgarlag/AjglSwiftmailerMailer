@@ -31,8 +31,6 @@ return [
 ];
 ```
 
-**❮ WARNING ❯**: It requires the symfony mailer to be registered as `mailer.mailer`. See Symfony PR [#31854](https://github.com/symfony/symfony/pull/31854).
-
 **❮ NOTE ❯**: The bundle will override the default mailer transport. See Symfony Bug [#31385](https://github.com/symfony/symfony/issues/31385) to see why.
 
 
