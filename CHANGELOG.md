@@ -4,9 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+## [0.1.0] - 2019-06-06
+
+### Added
+
+* Symfony Bundle
 
 ## 0.0.1 - 2019-06-06
-Initial implemenation
+Initial implementation
 
 
-[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.0.1...master
+[unreleased]: https://github.com/ajgarlag/AjglSwiftmailerMailer/compare/0.1.0...master
+[0.1.0]: https://github.com/ajgarlag/AjglSwiftmailerMailer/compare/0.0.1...0.1.0
